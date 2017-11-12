@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>  
+</head>
+<body>
+  <div id="app">
+    <display v-bind:message='message'></display>
+    <numeric-button label='7' v-on:pushed='buttonPushed'></numericButton>
+  </div>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
