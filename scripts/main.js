@@ -1,37 +1,34 @@
-Vue.component('numericButton',{
+Vue.component('calculator-button', {
     props: ['label'],
-    template:'<button v-on:click="onPushed">{{ label }}</button>',
+    template: '<button v-on:click="onPushed" class="col-2 button numeric-button">{{ label }}</button>',
     methods: {
-        onPushed: function() {
-            this.$emit('pushed', this.label);
+        onPushed: function () {
+            this.$emit('pushed', this.label.toLowerCase());
         }
     }
 });
 
-Vue.component('display',{
+Vue.component('display', {
     props: ['message'],
-    template:'<div>{{ message }}</div>'
+    template: '<div class="col-6">{{ message }}</div>'
 });
 
 var app = new Vue({
     el: '#app',
     data: {
-      message: 'Hello Vue!',
-      total: []
+        message: 'Roll!',
+        input: []
     },
     methods: {
-        buttonPushed: function(event){
-            this.total.push(parseInt(event,10));
+        buttonPushed: function (event) {
+            this.input.push(event);
 
-            if(this.total.length > 0)
-            {
+            if (this.input.length > 0) {
                 this.message = '';
-                for(var i = 0; i<this.total.length; i++)
-                {
-                    this.message += this.total[i];
+                for (var i = 0; i < this.input.length; i++) {
+                    this.message += this.input[i];
                 }
             }
         }
     }
-
-  });
+});
