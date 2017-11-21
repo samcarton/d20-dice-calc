@@ -10,7 +10,7 @@ Vue.component('calculator-button', {
 
 Vue.component('display', {
     props: ['message'],
-    template: '<div class="col-6">{{ message }}</div>'
+    template: '<div class="col-8 display">{{ message }}</div>'
 });
 
 var app = new Vue({
@@ -29,6 +29,12 @@ var app = new Vue({
                     this.message += this.input[i];
                 }
             }
+        },
+        roll: function(){
+            this.message = 'Rolled';
+        },
+        onNew: function(){
+            this.message = 'Newed';
         }
     }
 });

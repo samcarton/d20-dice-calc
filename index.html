@@ -9,29 +9,36 @@
 
 <body>
   <div id="app">
-    <div class="row" align="right">
+    <div class="row">
       <display v-bind:message='message'></display>
     </div>
     <div class="btn-group row">
       <calculator-button label='7' v-on:pushed='buttonPushed'></calculator-button>
       <calculator-button label='8' v-on:pushed='buttonPushed'></calculator-button>
       <calculator-button label='9' v-on:pushed='buttonPushed'></calculator-button>
-      <calculator-button label='D' v-on:pushed='buttonPushed'></calculator-button>
+      <calculator-button label='DEL' v-on:pushed='buttonPushed'></calculator-button>
     </div>
     <div class="btn-group row">
       <calculator-button label='4' v-on:pushed='buttonPushed'></calculator-button>
       <calculator-button label='5' v-on:pushed='buttonPushed'></calculator-button>
       <calculator-button label='6' v-on:pushed='buttonPushed'></calculator-button>
+      <calculator-button label='DICE' v-on:pushed='buttonPushed'></calculator-button>
     </div>
     <div class="btn-group row">
       <calculator-button label='1' v-on:pushed='buttonPushed'></calculator-button>
       <calculator-button label='2' v-on:pushed='buttonPushed'></calculator-button>
       <calculator-button label='3' v-on:pushed='buttonPushed'></calculator-button>
+      <calculator-button label='FAV' v-on:pushed='buttonPushed'></calculator-button>
     </div>
     <div class="btn-group row">
       <calculator-button label='-' v-on:pushed='buttonPushed'></calculator-button>
       <calculator-button label='0' v-on:pushed='buttonPushed'></calculator-button>
       <calculator-button label='+' v-on:pushed='buttonPushed'></calculator-button>
+      <calculator-button label='??' v-on:pushed='buttonPushed'></calculator-button>
+    </div>
+    <div class="btn-group row">
+      <button class="button roll-button col-6" @click="roll">ROLL</button>
+      <button class="button new-button col-2" @click="onNew">NEW</button>
     </div>
   </div>
   <script src="./scripts/main.js"></script>
