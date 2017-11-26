@@ -1,6 +1,6 @@
 Vue.component('calculator-button', {
     props: ['label'],
-    template: '<button v-on:click="onPushed" class="col-2 button numeric-button">{{ label }}</button>',
+    template: '<button v-on:click="onPushed" class="col-2 numeric-button">{{ label }}</button>',
     methods: {
         onPushed: function () {
             this.$emit('pushed', this.label.toLowerCase());

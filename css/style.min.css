@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Lucida Sans", sans-serif; }
+
+body {
+  background: linear-gradient(#FFE29E, #DCF9B2); }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px; }
+
+.col-1 {
+  width: 8.3333333333%; }
+
+.col-2 {
+  width: 16.6666666667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.3333333333%; }
+
+.col-5 {
+  width: 41.6666666667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.3333333333%; }
+
+.col-8 {
+  width: 66.6666666667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.3333333333%; }
+
+.col-11 {
+  width: 91.6666666667%; }
+
+.col-12 {
+  width: 100%; }
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.menu li:hover {
+  background-color: #0099cc; }
+
+.btn-group .button, .btn-group .numeric-button, .btn-group .side-button, .btn-group .roll-button, .btn-group .new-button {
+  border: none;
+  color: white;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  float: left; }
+  .btn-group .button:focus, .btn-group .numeric-button:focus, .btn-group .side-button:focus, .btn-group .roll-button:focus, .btn-group .new-button:focus {
+    outline: 0; }
+
+.numeric-button {
+  background-color: #3b3b3b; }
+  .numeric-button:hover {
+    background-color: #0e0e0e; }
+
+.side-button {
+  background-color: #686868; }
+  .side-button:hover {
+    background-color: #4d4d4d; }
+
+.roll-button {
+  background-color: #ff7300; }
+  .roll-button:hover {
+    background-color: #ff8b33; }
+
+.new-button {
+  background-color: #00ff15;
+  transform: translateY(0);
+  transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .new-button:hover {
+    background-color: #73ff7c; }
+  .new-button:active {
+    transform: translateY(50%); }
+
+.display {
+  margin-top: 100px;
+  text-align: right;
+  padding: 32px 64px;
+  font-size: 24px;
+  color: #3c3c3c;
+  background-color: transparent; }
+
+/*# sourceMappingURL=style.min.css.map */
